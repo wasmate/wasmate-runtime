@@ -5,7 +5,7 @@ go 1.21
 require (
 	github.com/NethermindEth/juno v0.3.1
 	github.com/NethermindEth/starknet.go v0.7.0
-	github.com/extism/go-sdk v1.0.3
+	github.com/extism/go-sdk v1.3.0
 	github.com/go-chassis/go-archaius v1.5.6
 	github.com/gofiber/fiber/v2 v2.52.4
 	github.com/ipfs/go-cid v0.4.1
@@ -14,7 +14,7 @@ require (
 	github.com/ipld/go-codec-dagpb v1.6.0
 	github.com/ipld/go-ipld-prime v0.21.0
 	github.com/sirupsen/logrus v1.9.0
-	github.com/tetratelabs/wazero v1.6.0
+	github.com/tetratelabs/wazero v1.7.3
 	github.com/urfave/cli v1.22.14
 	go.uber.org/automaxprocs v1.5.3
 	gopkg.in/yaml.v2 v2.4.0
