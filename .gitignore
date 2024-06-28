@@ -20,3 +20,6 @@
 # Go workspace file
 go.work
 go.work.sum
+
+starknet_contracts/target
+starknet_contracts/.snfoundry_cache
