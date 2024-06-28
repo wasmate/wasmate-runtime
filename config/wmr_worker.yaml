@@ -1,0 +1,41 @@
+app-type: "wasmate-runtime-WORKER"
+
+# The network model of HTTP handle ,NetPoll(gin) RAWEPOLL(fiber)
+net-model: "NETPOLL"
+
+# Process inflow traffic network configuration
+NetWork:
+  bind-network: "TCP" #Network transport layer type: TCP | UDP 
+  protocol-type: "HTTP" #Application layer network protocol：HTTP | RESP | QUIC
+  bind-address: "127.0.0.1:28080" #Network listening address
+
+#Runtime debug option
+debug:
+  enable: false
+  pprof-bind-addr: "127.0.0.1:19090"
+
+wasm-modules-files:
+  enable: false
+  path:
+    - "hello.wasm"
+
+wasm-modules-ipfs:
+  enable: false
+  lassie-net:
+    scheme: "http"
+    host: "x.x.x.x"
+    port: xxxx
+  cids:
+    - "QmeDsaLTc8dAfPrQ5duC4j5KqPdGbcinEo5htDqSgU8u8Z"
+
+wasm-modules-starknet:
+  enable: true
+  rpc-address: "https://starknet-sepolia.public.blastapi.io"
+  smart-contract: "0x01016993aa219f246d39ec6c25e1eef4920fe1e650179957bff9c0a08e09ed89"
+  contract-method: "get_wasm_cid"
+  lassie-net:
+    scheme: "http"
+    host: "x.x.x.x"
+    port: xxxx
+  wasm-func-names:
+    - "sayhello"
