@@ -15,7 +15,7 @@ require (
 	github.com/ipld/go-ipld-prime v0.21.0
 	github.com/sirupsen/logrus v1.9.0
 	github.com/tetratelabs/wazero v1.7.3
-	github.com/urfave/cli v1.22.14
+	github.com/urfave/cli v1.22.15
 	go.uber.org/automaxprocs v1.5.3
 	gopkg.in/yaml.v2 v2.4.0
 )
@@ -26,7 +26,7 @@ require (
 	github.com/andybalholm/brotli v1.0.5 // indirect
 	github.com/bits-and-blooms/bitset v1.10.0 // indirect
 	github.com/consensys/gnark-crypto v0.12.1 // indirect
-	github.com/cpuguy83/go-md2man/v2 v2.0.2 // indirect
+	github.com/cpuguy83/go-md2man/v2 v2.0.4 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/deckarep/golang-set/v2 v2.1.0 // indirect
 	github.com/ethereum/go-ethereum v1.13.15 // indirect
@@ -83,7 +83,7 @@ require (
 	github.com/shirou/gopsutil v3.21.4-0.20210419000835-c7a38de76ee5+incompatible // indirect
 	github.com/spaolacci/murmur3 v1.1.0 // indirect
 	github.com/spf13/cast v1.5.0 // indirect
-	github.com/stretchr/testify v1.8.4 // indirect
+	github.com/stretchr/testify v1.9.0 // indirect
 	github.com/test-go/testify v1.1.4 // indirect
 	github.com/tklauser/go-sysconf v0.3.12 // indirect
 	github.com/tklauser/numcpus v0.6.1 // indirect
