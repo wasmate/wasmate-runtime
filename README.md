@@ -1,14 +1,20 @@
-# WASMate 🚀
+# WASMATE: Unleash Innovation, Secure the Future
 
-"WASMATE" is a future-proof, innovative project dedicated to taking application runtime environments to new heights. As a disruptive platform spanning the fields of Web2.0 and Web3.0, WASMATE not only provides an advanced WASM runtime environment, but also has impressive capabilities in building modern applications.
+"WASMATE" is an innovative project revolutionizing application runtime environments by bridging Web2.0 and Web3.0. It offers advanced WASM runtimes, enabling easy access to cloud-native environments and microservice middleware with low resource utilization and simplified distributed systems. For Web3.0, WASMATE integrates decentralized storage, trusted computing, AI model interaction, decentralized identity verification, and cross-chain computing, making it a leader in the blockchain ecosystem. Join WASMATE to explore the future of secure, efficient, and innovative web applications, driving technological innovation and shaping the web's next era.
 
-In the field of Web 2.0, WASMATE provides developers with easy access to cloud native environments and microservice middleware through a series of powerful functions such as low resource utilization, distributed system simplification, function-level inter-service calls, and state management. solution. You don’t need to worry about large-scale application transformation, WASMATE will guide you to the next stage of application development, unleash your creativity and help your business thrive.
+<p align="center">
+<img 
+    src="https://github.com/wasmate/wasmate-runtime/assets/34047788/ac7ecbd6-0e54-42ae-a1e3-5fbed38f5d67" 
+     alt="wasmate">
+</p>
 
-In the new era of Web3.0, WASMATE shows not only the evolution of technology, but also a brave exploration of the future. Functions such as decentralized storage, trusted computing, interaction with large AI models, decentralized identity verification, and cross-chain computing make WASMATE a leader in the Web3.0 environment. Not only is it closely integrated with the blockchain network, it can also easily cope with the complex needs of decentralized finance, identity verification and other fields, providing users with all-round, highly secure services.
+# Runtime capabilities
 
-"WASMATE" is not only a technology platform, but also the embodiment of a vision to lead future innovation. Join WASMATE, let us explore the unknown together and build a more secure, efficient and innovative web application ecosystem. This is not only technological innovation, but also confidence and vision for the future.
-
-# Capacity
+<p align="center">
+<img 
+    src="https://github.com/wasmate/wasmate-runtime/assets/34047788/c8a5e96d-6806-4ebc-bfa2-e349b26c347c" 
+     alt="wasmate">
+</p>
 
 ## Web2.0 Domain
 
