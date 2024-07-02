@@ -4,9 +4,10 @@
 
 <p align="center">
 <img 
-    src="https://github.com/wasmate/wasmate-runtime/assets/34047788/ac7ecbd6-0e54-42ae-a1e3-5fbed38f5d67" 
+    src="https://github.com/wasmate/wasmate-runtime/assets/34047788/06697deb-1523-49ce-a8c3-d851adfe646c" 
      alt="wasmate">
 </p>
+
 
 # Runtime capabilities
 
