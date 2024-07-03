@@ -54,8 +54,151 @@
 | Blockchain Governance Support         | Provides functionality to support blockchain governance, including decentralized mechanisms for voting, proposing, and decision-making. |
 | Decentralized File Storage            | Supports decentralized file storage solutions, ensuring distributed storage and sharing of files. |
 
+
+# Quick start
+
+## 1. Clone the repository
+   ```bash
+   git clone https://github.com/wasmate/wasmate-runtime.git
+   ```
+
+## 2. Build
+   ```bash
+   cd wasmate-runtime
+   make
+   ```
+
+## 3. Adjust configuration file
+   ```yaml
+app-type: "wasmate-runtime-WORKER"
+
+# The network model of HTTP handle ,NetPoll(gin) RAWEPOLL(fiber)
+net-model: "NETPOLL"
+
+# Process inflow traffic network configuration
+NetWork:
+  bind-network: "TCP" #Network transport layer type: TCP | UDP 
+  protocol-type: "HTTP" #Application layer network protocol：HTTP | RESP | QUIC
+  bind-address: "127.0.0.1:28080" #Network listening address
+
+#Runtime debug option
+debug:
+  enable: false
+  pprof-bind-addr: "127.0.0.1:19090"
+
+wasm-modules-files:
+  enable: false
+  path:
+    - "hello.wasm"
+
+wasm-modules-ipfs:
+  enable: false
+  lassie-net:
+    scheme: "http"
+    host: "x.x.x.x"
+    port: xxxx
+  cids:
+    - "QmeDsaLTc8dAfPrQ5duC4j5KqPdGbcinEo5htDqSgU8u8Z"
+
+wasm-modules-starknet:
+  enable: true
+  rpc-address: "https://starknet-sepolia.public.blastapi.io"
+  smart-contract: "0x01016993aa219f246d39ec6c25e1eef4920fe1e650179957bff9c0a08e09ed89"
+  contract-method: "get_wasm_cid"
+  lassie-net:
+    scheme: "http"
+    host: "x.x.x.x"
+    port: xxxx
+  wasm-func-names:
+    - "sayhello"
+   ```
+
+## 4. Load configuration and run
+ ```shell
+   wasmate-runtime -c wis_worker.yaml
+ ```
+
+## 5. Testing WASMATE Runtime
+
+```shell
+$ curl -d "wasmate-runtime" "http://localhost:28080"
+👋 Hello wasmate-runtime%
+```
+
+# Performance Testing
+
+```shell
+$ hey -n 1000000 -c 100 -m POST \
+-d 'wasmate-runtime' \
+"http://127.0.0.1:28080"
+
+Summary:
+  Total:        29.0599 secs
+  Slowest:      0.0522 secs
+  Fastest:      0.0001 secs
+  Average:      0.0029 secs
+  Requests/sec: 34411.6948
+  
+  Total data:   26000000 bytes
+  Size/request: 26 bytes
+
+Response time histogram:
+  0.000 [1]     |
+  0.005 [985746]        |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.010 [13559] |■
+  0.016 [132]   |
+  0.021 [108]   |
+  0.026 [147]   |
+  0.031 [91]    |
+  0.037 [124]   |
+  0.042 [19]    |
+  0.047 [1]     |
+  0.052 [72]    |
+
+
+Latency distribution:
+  10% in 0.0023 secs
+  25% in 0.0026 secs
+  50% in 0.0029 secs
+  75% in 0.0033 secs
+  90% in 0.0036 secs
+  95% in 0.0039 secs
+  99% in 0.0057 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:   0.0000 secs, 0.0001 secs, 0.0522 secs
+  DNS-lookup:   0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:    0.0000 secs, 0.0000 secs, 0.0318 secs
+  resp wait:    0.0028 secs, 0.0001 secs, 0.0521 secs
+  resp read:    0.0000 secs, 0.0000 secs, 0.0260 secs
+
+Status code distribution:
+  [200] 1000000 responses
+
+```
+
+# Contributing
+
+We welcome contributions from the community. To contribute to this project:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Make your changes and commit them (`git commit -am 'Add new feature'`).
+4. Push your changes to the branch (`git push origin feature/your-feature`).
+5. Create a new Pull Request.
+
+
+## ❤️Thanks for technical support❤️
+1. [**Filecoin-Lassie**](https://github.com/filecoin-project/lassie/):Support IPFS file retrieval
+2. [**Filecoin-IPLD-Go-Car**](https://github.com/ipld/go-car)：Support IPFS Car file extraction
+
+
 ## Join the Revolution
 
 **WASMATE** is more than just a technological platform; it's a visionary project leading towards future innovation. Join us in shaping a secure, efficient, and innovative web application ecosystem. Feel free to explore the project further on our [official website](https://www.wasmate.xyz/).
 
 Let's revolutionize the way we build and deploy web applications with **WASMATE**!
+
+# License
+
+This project is dual-licensed under Apache 2.0 and MIT terms.
