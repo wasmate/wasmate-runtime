@@ -115,7 +115,7 @@ wasm-modules-starknet:
 
 ## 4. Load configuration and run
  ```shell
-   wasmate-runtime -c wis_worker.yaml
+   wasmate-runtime -c wmr_worker.yaml
  ```
 
 ## 5. Testing WASMATE Runtime
@@ -177,7 +177,11 @@ Status code distribution:
 
 ```
 
-# Contributing
+# Join the Revolution
+
+**WASMATE** is more than just a technological platform; it's a visionary project leading towards future innovation. Join us in shaping a secure, efficient, and innovative web application ecosystem. Feel free to explore the project further on our [official website](https://www.wasmate.xyz/).
+
+Let's revolutionize the way we build and deploy web applications with **WASMATE**!
 
 We welcome contributions from the community. To contribute to this project:
 
@@ -187,18 +191,18 @@ We welcome contributions from the community. To contribute to this project:
 4. Push your changes to the branch (`git push origin feature/your-feature`).
 5. Create a new Pull Request.
 
-
-## ❤️Thanks for technical support❤️
-1. [**Filecoin-Lassie**](https://github.com/filecoin-project/lassie/):Support IPFS file retrieval
-2. [**Filecoin-IPLD-Go-Car**](https://github.com/ipld/go-car)：Support IPFS Car file extraction
-
-
-## Join the Revolution
-
-**WASMATE** is more than just a technological platform; it's a visionary project leading towards future innovation. Join us in shaping a secure, efficient, and innovative web application ecosystem. Feel free to explore the project further on our [official website](https://www.wasmate.xyz/).
-
-Let's revolutionize the way we build and deploy web applications with **WASMATE**!
+# Acknowledgements
+* **Filecoin** - For decentralized storage and retrieval.
+* **IPFS** - For enabling decentralized data storage.
+* **StarkNet** - For providing the zk-rollup-based Layer 2 solution.
+* **Extism** - For wasm plugin management.
+* **wazero** - For WebAssembly virtual machine capabilities.
+* **Fiber** - For HTTP server functionalities.
 
 # License
 
 This project is dual-licensed under Apache 2.0 and MIT terms.
+
+## Disclaimers
+
+When you use this software, you have agreed and stated that the author, maintainer and contributor of this software are not responsible for any risks, costs or problems you encounter. If you find a software defect or BUG, please submit a patch to help improve it!
