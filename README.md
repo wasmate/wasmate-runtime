@@ -192,8 +192,7 @@ We welcome contributions from the community. To contribute to this project:
 5. Create a new Pull Request.
 
 # Acknowledgements
-* **Filecoin** - For decentralized storage and retrieval.
-* **IPFS** - For enabling decentralized data storage.
+* **IPFS && Filecoin** - For decentralized storage and retrieval.
 * **StarkNet** - For providing the zk-rollup-based Layer 2 solution.
 * **Extism** - For wasm plugin management.
 * **wazero** - For WebAssembly virtual machine capabilities.
