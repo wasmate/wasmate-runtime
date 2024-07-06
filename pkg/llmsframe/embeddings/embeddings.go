@@ -40,7 +40,7 @@ func randomIndexName() string {
 */
 
 // LLMsFrame defines the structure for the framework.
-type LLMsFrame struct {
+type EmbeddingsFrame struct {
 	Embedder    embeddings.Embedder
 	Scheme      string
 	Host        string
