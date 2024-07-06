@@ -26,3 +26,4 @@ starknet_contracts/target
 starknet_contracts/.snfoundry_cache
 
 config/wmr_worker_dev.yaml
+pkg/llmsframe/embeddings/models/
