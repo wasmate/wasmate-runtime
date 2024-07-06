@@ -1,4 +1,4 @@
-package llmsframe
+package embeddings
 
 import (
 	"context"
