@@ -39,7 +39,7 @@ func randomIndexName() string {
 	}
 */
 
-// LLMsFrame defines the structure for the framework.
+// EmbeddingsFrame defines the structure for the framework.
 type EmbeddingsFrame struct {
 	Embedder    embeddings.Embedder
 	Scheme      string
@@ -48,8 +48,8 @@ type EmbeddingsFrame struct {
 	VectorStore weaviate.Store
 }
 
-// New creates a new instance of LLMsFrame.
-func New(embedder embeddings.Embedder, scheme, host, indexName string) (*LLMsFrame, error) {
+// New creates a new instance of EmbeddingsFrame.
+func New(embedder embeddings.Embedder, scheme, host, indexName string) (*EmbeddingsFrame, error) {
 	client, err := weaviate.New(
 		weaviate.WithEmbedder(embedder),
 		weaviate.WithScheme(scheme),
@@ -60,7 +60,7 @@ func New(embedder embeddings.Embedder, scheme, host, indexName string) (*LLMsFra
 		return nil, fmt.Errorf("create weaviate client: %w", err)
 	}
 
-	return &LLMsFrame{
+	return &EmbeddingsFrame{
 		Embedder:    embedder,
 		Scheme:      scheme,
 		Host:        host,
@@ -70,7 +70,7 @@ func New(embedder embeddings.Embedder, scheme, host, indexName string) (*LLMsFra
 }
 
 // AddDocuments adds a list of documents to the vector store.
-func (lf *LLMsFrame) AddDocuments(ctx context.Context, docs []schema.Document) error {
+func (lf *EmbeddingsFrame) AddDocuments(ctx context.Context, docs []schema.Document) error {
 	_, err := lf.VectorStore.AddDocuments(ctx, docs)
 	if err != nil {
 		return fmt.Errorf("add documents: %w", err)
@@ -79,7 +79,7 @@ func (lf *LLMsFrame) AddDocuments(ctx context.Context, docs []schema.Document) e
 }
 
 // SimilaritySearch performs a similarity search and returns matches.
-func (lf *LLMsFrame) SimilaritySearch(ctx context.Context, query string, topK int, threshold float32) ([]schema.Document, error) {
+func (lf *EmbeddingsFrame) SimilaritySearch(ctx context.Context, query string, topK int, threshold float32) ([]schema.Document, error) {
 	matches, err := lf.VectorStore.SimilaritySearch(ctx, query, topK, vectorstores.WithScoreThreshold(threshold))
 	if err != nil {
 		return nil, fmt.Errorf("similarity search: %w", err)
