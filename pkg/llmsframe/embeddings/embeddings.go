@@ -45,7 +45,7 @@ type EmbeddingsFrame struct {
 	Scheme      string
 	Host        string
 	IndexName   string
-	VectorStore weaviate.Store
+	VectorStore *weaviate.Store
 }
 
 // New creates a new instance of EmbeddingsFrame.
@@ -65,17 +65,17 @@ func New(embedder embeddings.Embedder, scheme, host, indexName string) (*Embeddi
 		Scheme:      scheme,
 		Host:        host,
 		IndexName:   indexName,
-		VectorStore: client,
+		VectorStore: &client,
 	}, nil
 }
 
 // AddDocuments adds a list of documents to the vector store.
-func (lf *EmbeddingsFrame) AddDocuments(ctx context.Context, docs []schema.Document) error {
-	_, err := lf.VectorStore.AddDocuments(ctx, docs)
+func (lf *EmbeddingsFrame) AddDocuments(ctx context.Context, docs []schema.Document) (data []string, err error) {
+	data, err = lf.VectorStore.AddDocuments(ctx, docs)
 	if err != nil {
-		return fmt.Errorf("add documents: %w", err)
+		return nil, fmt.Errorf("add documents: %w", err)
 	}
-	return nil
+	return
 }
 
 // SimilaritySearch performs a similarity search and returns matches.
