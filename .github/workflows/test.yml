@@ -18,7 +18,7 @@ jobs:
 #      KEY: VALUE
     steps:
       - name: start weaviate
-        run: docker run -p 18080:8080 semitechnologies/weaviate:latest
+        run: docker run -d --name weaviate  -p 18080:8080 semitechnologies/weaviate:latest
       - name: Install Go
         uses: actions/setup-go@v5
         with:
