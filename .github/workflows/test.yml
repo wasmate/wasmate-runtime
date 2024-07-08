@@ -1,0 +1,29 @@
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+name: Test
+jobs:
+  test_llms:
+    strategy:
+      matrix:
+        go-version: [1.22.x]
+        os: [ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+#    env:
+#      KEY: VALUE
+    steps:
+      - name: start weaviate
+        run: docker run -p 18080:8080 semitechnologies/weaviate:latest
+      - name: Install Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: ${{ matrix.go-version }}
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Test
+        run: go test -v --v ./llmsframe/embeddings 
