@@ -17,13 +17,13 @@ jobs:
 #    env:
 #      KEY: VALUE
     steps:
-      - name: start weaviate
-        run: docker run -d --name weaviate  -p 18080:8080 semitechnologies/weaviate:latest
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Run Docker compose
+        run:  docker compose up -d
       - name: Install Go
         uses: actions/setup-go@v5
         with:
           go-version: ${{ matrix.go-version }}
-      - name: Checkout code
-        uses: actions/checkout@v4
       - name: Test
         run: go test -timeout 300s -v --v ./llmsframe/embeddings 
