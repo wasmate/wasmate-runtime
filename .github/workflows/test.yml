@@ -8,7 +8,7 @@ on:
 
 name: Test
 jobs:
-  test_llms:
+  llmsframe_embeddings:
     strategy:
       matrix:
         go-version: [1.22.x]
