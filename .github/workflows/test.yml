@@ -26,4 +26,4 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Test
-        run: go test -v --v ./llmsframe/embeddings 
+        run: go test -timeout 300s -v --v ./llmsframe/embeddings 
