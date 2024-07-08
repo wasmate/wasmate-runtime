@@ -1,4 +1,6 @@
 # WASMATE: Unleash Innovation, Secure the Future
+![build](https://github.com/wasmate/wasmate-runtime/actions/workflows/build.yml/badge.svg)
+![test](https://github.com/wasmate/wasmate-runtime/actions/workflows/test.yml/badge.svg)
 
 "WASMATE" is an innovative project revolutionizing application runtime environments by bridging Web2.0 and Web3.0. It offers advanced WASM runtimes, enabling easy access to cloud-native environments and microservice middleware with low resource utilization and simplified distributed systems. For Web3.0, WASMATE integrates decentralized storage, trusted computing, AI model interaction, decentralized identity verification, and cross-chain computing, making it a leader in the blockchain ecosystem. Join WASMATE to explore the future of secure, efficient, and innovative web applications, driving technological innovation and shaping the web's next era.
 
