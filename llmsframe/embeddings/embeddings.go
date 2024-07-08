@@ -89,7 +89,6 @@ func (lf *EmbeddingsFrame) SimilaritySearch(ctx context.Context, query string, t
 
 // PrintMatches prints the search matches to the console.
 func PrintMatches(matches []schema.Document, query string) {
-	fmt.Println("Matches:")
 	for _, match := range matches {
 		fmt.Printf("(%0.2f)  [%s] -> [%s]\n", match.Score, query, match.PageContent)
 	}
