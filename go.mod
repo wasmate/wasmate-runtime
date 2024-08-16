@@ -16,7 +16,7 @@ require (
 	github.com/ipld/go-ipld-prime v0.21.0
 	github.com/sirupsen/logrus v1.9.3
 	github.com/stretchr/testify v1.9.0
-	github.com/tetratelabs/wazero v1.7.3
+	github.com/tetratelabs/wazero v1.8.0
 	github.com/tmc/langchaingo v0.1.12
 	github.com/urfave/cli v1.22.15
 	go.uber.org/automaxprocs v1.5.3
