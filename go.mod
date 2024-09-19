@@ -11,7 +11,7 @@ require (
 	github.com/google/uuid v1.6.0
 	github.com/ipfs/go-cid v0.4.1
 	github.com/ipfs/go-unixfsnode v1.9.1
-	github.com/ipld/go-car/v2 v2.14.0
+	github.com/ipld/go-car/v2 v2.14.1
 	github.com/ipld/go-codec-dagpb v1.6.0
 	github.com/ipld/go-ipld-prime v0.21.0
 	github.com/sirupsen/logrus v1.9.3
