@@ -19,7 +19,7 @@ require (
 	github.com/tetratelabs/wazero v1.8.0
 	github.com/tmc/langchaingo v0.1.12
 	github.com/urfave/cli v1.22.15
-	go.uber.org/automaxprocs v1.5.3
+	go.uber.org/automaxprocs v1.6.0
 	gopkg.in/yaml.v2 v2.4.0
 )
 
