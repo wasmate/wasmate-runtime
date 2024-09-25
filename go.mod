@@ -4,7 +4,7 @@ go 1.22.2
 
 require (
 	github.com/NethermindEth/juno v0.12.0
-	github.com/NethermindEth/starknet.go v0.7.0
+	github.com/NethermindEth/starknet.go v0.7.1
 	github.com/extism/go-sdk v1.4.0
 	github.com/go-chassis/go-archaius v1.5.6
 	github.com/gofiber/fiber/v2 v2.52.5
@@ -92,7 +92,6 @@ require (
 	github.com/shirou/gopsutil v3.21.11+incompatible // indirect
 	github.com/spaolacci/murmur3 v1.1.0 // indirect
 	github.com/spf13/cast v1.6.0 // indirect
-	github.com/test-go/testify v1.1.4 // indirect
 	github.com/tetratelabs/wabin v0.0.0-20230304001439-f6f874872834 // indirect
 	github.com/tklauser/go-sysconf v0.3.13 // indirect
 	github.com/tklauser/numcpus v0.7.0 // indirect

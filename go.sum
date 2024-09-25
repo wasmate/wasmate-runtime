@@ -54,8 +54,8 @@ github.com/Microsoft/hcsshim v0.11.4/go.mod h1:smjE4dvqPX9Zldna+t5FG3rnoHhaB7QYx
 github.com/NYTimes/gziphandler v0.0.0-20170623195520-56545f4a5d46/go.mod h1:3wb06e3pkSAbeQ52E9H9iFoQsEEwGN64994WTCIhntQ=
 github.com/NethermindEth/juno v0.12.0 h1:+0VxAH6iBYOKaus5QLVt1i/TMv2xckvAxOiWuCgN3z0=
 github.com/NethermindEth/juno v0.12.0/go.mod h1:GaULchNsqOOlFbQ/rDad1JmZ12kZl/KX/4u7vxXLSSM=
-github.com/NethermindEth/starknet.go v0.7.0 h1:OmKkPs7EvS8uUkoxh+y/4xeluFx4fepZoqhczr51Y/c=
-github.com/NethermindEth/starknet.go v0.7.0/go.mod h1:k6qFeYocOAeY7sdF7oAaabvjXvmcVtBbLn7YE2azVyQ=
+github.com/NethermindEth/starknet.go v0.7.1 h1:+BkWB1MxFXP5ZWBu70c/ndeZEJS68lnTQMeF4+FFUws=
+github.com/NethermindEth/starknet.go v0.7.1/go.mod h1:r5alByIuyQd3Nway+3cXV81wmS06OmkuPzKCYhqukQw=
 github.com/OneOfOne/xxhash v1.2.2/go.mod h1:HSdplMjZKSmBqAxg5vPj2TmRDmfkzw+cTzAElWljhcU=
 github.com/PuerkitoBio/purell v1.0.0/go.mod h1:c11w/QuzBsJSee3cPx9rAFu61PvFxuPbtSwDGJws/X0=
 github.com/PuerkitoBio/purell v1.1.1 h1:WEQqlqaGbrPkxLJWfBwQmfEAE1Z7ONdDLqrN38tNFfI=
@@ -768,8 +768,6 @@ github.com/stretchr/testify v1.9.0/go.mod h1:r2ic/lqez/lEtzL7wO/rwa5dbSLXVDPFyf8
 github.com/subosito/gotenv v1.2.0/go.mod h1:N0PQaV/YGNqwC0u51sEeR/aUtSLEXKX9iv69rRypqCw=
 github.com/supranational/blst v0.3.11 h1:LyU6FolezeWAhvQk0k6O/d49jqgO52MSDDfYgbeoEm4=
 github.com/supranational/blst v0.3.11/go.mod h1:jZJtfjgudtNl4en1tzwPIV3KjUnQUvG3/j+w+fVonLw=
-github.com/test-go/testify v1.1.4 h1:Tf9lntrKUMHiXQ07qBScBTSA0dhYQlu83hswqelv1iE=
-github.com/test-go/testify v1.1.4/go.mod h1:rH7cfJo/47vWGdi4GPj16x3/t1xGOj2YxzmNQzk2ghU=
 github.com/testcontainers/testcontainers-go v0.31.0 h1:W0VwIhcEVhRflwL9as3dhY6jXjVCA27AkmbnZ+UTh3U=
 github.com/testcontainers/testcontainers-go v0.31.0/go.mod h1:D2lAoA0zUFiSY+eAflqK5mcUx/A5hrrORaEQrd0SefI=
 github.com/testcontainers/testcontainers-go/modules/weaviate v0.31.0 h1:iVJX9O12GHRhqPgIuz/eE8BsNEwyrUMJnWgduBt8quc=
