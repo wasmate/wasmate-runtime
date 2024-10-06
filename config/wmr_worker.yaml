@@ -29,7 +29,7 @@ wasm-modules-ipfs:
     - "QmeDsaLTc8dAfPrQ5duC4j5KqPdGbcinEo5htDqSgU8u8Z"
 
 wasm-modules-starknet:
-  enable: true
+  enable: false
   rpc-address: "https://starknet-sepolia.public.blastapi.io"
   smart-contract: "0x01016993aa219f246d39ec6c25e1eef4920fe1e650179957bff9c0a08e09ed89"
   contract-method: "get_wasm_cid"
