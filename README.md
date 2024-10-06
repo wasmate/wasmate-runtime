@@ -56,6 +56,7 @@
 | Blockchain Governance Support         | Provides functionality to support blockchain governance, including decentralized mechanisms for voting, proposing, and decision-making. |
 | Decentralized File Storage            | Supports decentralized file storage solutions, ensuring distributed storage and sharing of files. |
 
+# 
 
 # Quick start
 
@@ -102,8 +103,8 @@ wasm-modules-ipfs:
   cids:
     - "QmeDsaLTc8dAfPrQ5duC4j5KqPdGbcinEo5htDqSgU8u8Z"
 
-wasm-modules-starknet:
-  enable: true
+wasm-modules-starknet: 
+  enable: false
   rpc-address: "https://starknet-sepolia.public.blastapi.io"
   smart-contract: "0x01016993aa219f246d39ec6c25e1eef4920fe1e650179957bff9c0a08e09ed89"
   contract-method: "get_wasm_cid"
