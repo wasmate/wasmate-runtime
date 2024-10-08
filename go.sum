@@ -173,8 +173,8 @@ github.com/ethereum/c-kzg-4844 v0.4.0/go.mod h1:VewdlzQmpT5QSrVhbBuGoCdFJkpaJlO1
 github.com/ethereum/go-ethereum v1.13.15 h1:U7sSGYGo4SPjP6iNIifNoyIAiNjrmQkz6EwQG+/EZWo=
 github.com/ethereum/go-ethereum v1.13.15/go.mod h1:TN8ZiHrdJwSe8Cb6x+p0hs5CxhJZPbqB7hHkaUXcmIU=
 github.com/evanphx/json-patch v4.2.0+incompatible/go.mod h1:50XU6AFN0ol/bzJsmQLiYLvXMP4fmwYFNcr97nuDLSk=
-github.com/extism/go-sdk v1.4.0 h1:8qlZM7A5eB4FyKI9cwxiUA3tzUkXlraKt5CULuzjRxI=
-github.com/extism/go-sdk v1.4.0/go.mod h1:yRolc4PvIUQ9J/BBB3QZ5EY1MtXAN2jqBGDGR3Sk54M=
+github.com/extism/go-sdk v1.5.0 h1:2Unb+YSe9j0FkIyNuOFBbiFu5LU0nQF+43MR+jTD/ek=
+github.com/extism/go-sdk v1.5.0/go.mod h1:yRolc4PvIUQ9J/BBB3QZ5EY1MtXAN2jqBGDGR3Sk54M=
 github.com/fatih/color v1.7.0/go.mod h1:Zm6kSWBoL9eyXnKyktHP6abPY2pDugNf5KwzbycvMj4=
 github.com/felixge/httpsnoop v1.0.4 h1:NFTV2Zj1bL4mc9sqWACXbQFVBBg2W3GPvqp8/ESS2Wg=
 github.com/felixge/httpsnoop v1.0.4/go.mod h1:m8KPJKqk1gH5J9DgRY2ASl2lWCfGKXixSwevea8zH2U=

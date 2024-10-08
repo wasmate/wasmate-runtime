@@ -5,7 +5,7 @@ go 1.22.2
 require (
 	github.com/NethermindEth/juno v0.12.0
 	github.com/NethermindEth/starknet.go v0.7.0
-	github.com/extism/go-sdk v1.4.0
+	github.com/extism/go-sdk v1.5.0
 	github.com/go-chassis/go-archaius v1.5.6
 	github.com/gofiber/fiber/v2 v2.52.5
 	github.com/google/uuid v1.6.0
